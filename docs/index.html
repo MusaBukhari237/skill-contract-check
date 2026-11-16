@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<title>Check Agent Skills frontmatter | Skill Contract Check</title>
+<meta name="description" content="Review a SKILL.md for required fields and portable names from your browser or terminal.">
+<link rel="canonical" href="https://musabukhari237.github.io/skill-contract-check/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Check Agent Skills frontmatter | Skill Contract Check">
+<meta property="og:description" content="Review a SKILL.md for required fields and portable names from your browser or terminal.">
+<meta property="og:url" content="https://musabukhari237.github.io/skill-contract-check/">
+<meta property="og:image" content="https://musabukhari237.github.io/skill-contract-check/preview.png">
+<meta property="og:image:alt" content="Skill Contract Check showing the tool with an example result">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="app.css">
+<script src="app.mjs" type="module"></script>
+</head>
+<body>
+<header><a class="brand" href="./"><img src="logo.svg" alt="">Skill Contract Check</a><a class="repo" href="https://github.com/MusaBukhari237/skill-contract-check">Source on GitHub</a></header>
+<main>
+<section class="hero"><h1>Check Agent Skills frontmatter</h1><p>Review a SKILL.md for required fields and portable names from your browser or terminal.</p></section>
+<div class="workspace">
+<section class="panel input" aria-labelledby="settings"><h2 id="settings">Settings</h2>
+<div class="fields"><label class="wide">SKILL.md content<textarea id="skill" placeholder="---" maxlength="120000" spellcheck="false" rows="6"></textarea></label><label class="wide">Expected folder name (optional)<input id="folder" placeholder="summarize-notes" maxlength="64"></label></div><div class="actions"><button type="button" id="run">Check skill</button><button type="button" class="quiet" id="example">Load example</button></div><p class="note">Checks the common frontmatter format and name/description rules. The rest of the skill is never run.</p>
+</section>
+<section class="panel output" aria-labelledby="output"><h2 id="output">Result</h2><div class="result" id="result" aria-live="polite">Load the example or enter your own input.</div></section>
+</div>
+</main>
+<footer>Open-source browser tool · <a href="https://github.com/MusaBukhari237/skill-contract-check/blob/HEAD/LICENSE">MIT license</a></footer>
+</body>
+</html>
