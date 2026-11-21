@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-app="skill-contract-check">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <title>Check Agent Skills frontmatter | Skill Contract Check</title>
 <meta name="description" content="Review a SKILL.md for required fields and portable names from your browser or terminal.">
 <link rel="canonical" href="https://musabukhari237.github.io/skill-contract-check/">
@@ -17,18 +17,22 @@
 <link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="app.css">
 <script src="app.mjs" type="module"></script>
+  <script type="module" src="experience.mjs"></script>
+  <script type="module" src="experience.mjs"></script>
 </head>
 <body>
-<header><a class="brand" href="./"><img src="logo.svg" alt="">Skill Contract Check</a><a class="repo" href="https://github.com/MusaBukhari237/skill-contract-check">Source on GitHub</a></header>
+<a class="skip" href="#workspace">Skip to workspace</a>
+<header><a class="brand" href="./"><img src="logo.svg" alt="">Skill Contract Check</a><nav aria-label="Main"><a href="#guide">How to use</a><a class="repo" href="https://github.com/MusaBukhari237/skill-contract-check">GitHub ↗</a></nav></header>
 <main>
-<section class="hero"><h1>Check Agent Skills frontmatter</h1><p>Review a SKILL.md for required fields and portable names from your browser or terminal.</p></section>
-<div class="workspace">
-<section class="panel input" aria-labelledby="settings"><h2 id="settings">Settings</h2>
+<section class="masthead"><div class="intro"><p class="category">Agent Skills review</p><h1>A sound beginning for your skill.</h1><p class="description">Check the frontmatter, name, and description of an Agent Skill before sharing it.</p></div><figure class="scene diagram"><img src="scene.svg" alt="Agent Skills review process illustration" width="440" height="260"></figure></section>
+<div class="workspace" id="workspace">
+<section class="panel input" aria-labelledby="settings"><h2 id="settings">The manuscript</h2>
 <div class="fields"><label class="wide">SKILL.md content<textarea id="skill" placeholder="---" maxlength="120000" spellcheck="false" rows="6"></textarea></label><label class="wide">Expected folder name (optional)<input id="folder" placeholder="summarize-notes" maxlength="64"></label></div><div class="actions"><button type="button" id="run">Check skill</button><button type="button" class="quiet" id="example">Load example</button></div><p class="note">Checks the common frontmatter format and name/description rules. The rest of the skill is never run.</p>
 </section>
-<section class="panel output" aria-labelledby="output"><h2 id="output">Result</h2><div class="result" id="result" aria-live="polite">Load the example or enter your own input.</div></section>
+<section class="panel output" aria-labelledby="output" id="output-panel"><h2 id="output" tabindex="-1">Review notes</h2><p class="result-status" id="result-status" aria-live="polite">Ready when you are</p><div class="result" id="result" aria-live="polite">Load the example or enter your own input.</div></section>
 </div>
+<details class="guide" id="guide"><summary>How to use Skill Contract Check</summary><ol><li>Paste SKILL.md content or load the sample.</li><li>Optionally enter the expected folder name.</li><li>Review the common frontmatter and portability checks.</li></ol></details>
 </main>
-<footer>Open-source browser tool · <a href="https://github.com/MusaBukhari237/skill-contract-check/blob/HEAD/LICENSE">MIT license</a></footer>
+<footer><span>Skill Contract Check · <a href="https://github.com/MusaBukhari237/skill-contract-check/blob/main/LICENSE">MIT licensed</a></span><span class="credits"><a href="https://www.leadceleris.com/">LeadCeleris</a><a href="https://www.aifficiento.biz/">AIFFICIENTO</a></span></footer>
 </body>
 </html>
