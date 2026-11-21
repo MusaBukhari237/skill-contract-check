@@ -26,6 +26,14 @@ python -m http.server 8000 --bind 127.0.0.1 --directory docs
 
 Open http://127.0.0.1:8000 in a browser. The site needs no package install. Run `node --test` with Node.js 22 or newer.
 
+## Interface
+
+Cream paper, editorial serif typography, a frontmatter illustration, and a separate review sheet create a document-review interface.
+
+Use Ctrl+Enter or Command+Enter to run the current inputs. Clear editor clears pasted text, and View results moves keyboard focus to the output. Status text identifies changed inputs and refreshed results.
+
+Fonts and imagery are bundled locally. Visual sources and font licenses are recorded in [asset credits](docs/Assets.md).
+
 ## Sponsors
 
 Supported by [LeadCeleris](https://www.leadceleris.com/) and [AIFFICIENTO](https://www.aifficiento.biz/).
